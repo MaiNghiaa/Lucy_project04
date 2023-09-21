@@ -256,3 +256,85 @@ button {
   line-height: 1;
   text-decoration-line: underline;
 }
+
+/* About */
+.About {
+  margin-top: 77px;
+  padding: 130px;
+}
+
+.About__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about__label {
+  margin-bottom: 15px;
+  color: #5e6085;
+  font-family: Sora, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.about__heading {
+  width: 446px;
+}
+.about__desc {
+  width: 431px;
+}
+.section--heading {
+  color: #000958;
+  font-family: Sora, sans-serif;
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.19; /* 119.231% */
+}
+
+.section--desc {
+  color: #656689;
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875; /* 187.5% */
+}
+
+.about__checklist {
+  margin-top: 54px;
+  color: #48496a;
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-start;
+  gap: 36px;
+}
+
+.about__check--item {
+  position: relative;
+
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.about__check--item::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #ff5d31;
+  box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+}
+
+.about__check--item::after {
+  content: url(../img/Check.svg);
+  position: absolute;
+  top: 2px;
+  left: 3px;
+}
